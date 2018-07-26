@@ -1,0 +1,7 @@
+CREATE TABLE `WatcherAlert` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `cluster` varchar(5) NOT NULL DEFAULT '',
+  `description` varchar(1000) NOT NULL,
+  `ts` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
