@@ -62,12 +62,9 @@ db_pass = base64.b64decode(db_pass)
 # email report
 def send_report(data,field_names,subj,details):
 
-    FROM = 'aws-security-report@vonage.com'
-    #TO = ['nasir.ahmed@vonage.com','nirav.kadakia@vonage.com','VIS-AWS-Alerts@vonage.com']
-    #TO = ['nasir.ahmed@vonage.com','nirav.kadakia@vonage.com']
-    TO = ['nasir.ahmed@vonage.com']
-    relay = 'mail-sysrelay.vgcva0.prod.vonagenetworks.net'
-    #relay = 'prodmx.kewr0.s.vonagenetworks.net'
+    FROM = 'My Reports <myreports@abcd.com>'
+    TO = ['abcd@xyz.com','1234@abcd.com']
+    relay = 'mail.relay.com'
 
     text = """
     Hello,
